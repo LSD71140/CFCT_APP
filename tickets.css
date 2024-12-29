@@ -1,0 +1,86 @@
+/* Style pour la section de liste des ventes */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.ventes {
+    margin-top: 20px;
+}
+
+/* Style pour chaque vente */
+.vente {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    display: flex; /* Utiliser flexbox pour aligner les éléments */
+    justify-content: space-between; /* Aligner les éléments sur l'axe principal (horizontal) */
+    align-items: center; /* Centrer les éléments sur l'axe transversal (vertical) */
+}
+
+/* Style pour le numéro de vente */
+.numero-vente {
+    font-weight: bold;
+}
+
+/* Style pour la liste des articles */
+.articles {
+    margin-left: 20px;
+}
+
+/* Style pour chaque article */
+.articles li {
+    margin-bottom: 5px;
+}
+
+/* Style pour le montant total */
+.montant-total {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Style pour le montant de carte */
+.montant-carte {
+    color: green;
+}
+
+/* Style pour le montant d'espèces */
+.montant-espece {
+    color: blue;
+}
+
+/* Style pour le montant de chèque */
+.montant-cheque {
+    color: red;
+}
+
+/* Style pour les boutons d'impression */
+.vente .buttons-container {
+    display: flex; /* Utiliser flexbox pour aligner les boutons */
+    align-items: center; /* Centrer les éléments sur l'axe transversal (vertical) */
+}
+
+.vente button {
+    padding: 5px 10px;
+    margin-left: 10px; /* Espacement entre les boutons */
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vente button:hover {
+    background-color: #0056b3;
+}

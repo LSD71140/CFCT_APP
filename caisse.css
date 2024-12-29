@@ -1,0 +1,179 @@
+/* Style du header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin: 0; /* Ajout de la marge */
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Style du main */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    min-height: calc(100vh - 200px); /* Réserve de l'espace pour le footer */
+    padding-bottom: 50px; /* Ajout de padding en bas pour éviter que les boutons ne passent sous le footer */
+}
+
+/* Définition de la hauteur de body et html à 100%*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style des boutons de produits */
+.products {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne quand ils n'ont pas assez de place */
+}
+
+.product-btn {
+    flex: 0 0 15vw; /* Chaque bouton prendra environ 15% de la largeur de l'écran */
+    padding: 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour les boutons en rupture de stock */
+.out-of-stock {
+    background-color: #dc3545; /* Rouge pour les produits en rupture de stock */
+    color: #fff;
+}
+
+/* Style de la section du panier */
+.cart {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 15px;
+    min-height: 200px; /* Définissez une hauteur minimale pour le panier */
+    min-width: 600px;
+}
+
+/* Style du footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.vtbtn {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0 80px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.vtbtn:hover {
+    background-color: #00FF08;
+}
+
+/* CSS pour supprimer le style de liste par défaut */
+.cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* CSS pour les boutons +, -, et Supprimer */
+.cart-items li {
+    margin-bottom: 25px;
+    padding-left: 0; /* Pour retirer l'indentation */
+}
+
+.cart-items plusbutton,
+.cart-items minusbutton,
+.cart-items deletebutton {
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart-items plusbutton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 40px;
+}
+
+.cart-items plusbutton:hover {
+    background-color: #0056b3;
+}
+
+.cart-items minusbutton {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 40px;
+}
+
+.cart-items minusbutton:hover {
+    background-color: #0056b3;
+}
+
+.cart-items deletebutton {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 7px 10px;
+}
+
+.cart-items deletebutton:hover {
+    background-color: #c82333;
+}
+
+/* Media query pour les écrans de taille moyenne (tablettes) */
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column; /* Modifier la direction de la disposition en colonne pour empêcher les boutons de passer sous le footer */
+        align-items: center; /* Centrer les éléments sur l'axe horizontal */
+    }
+
+    .products {
+        width: 100%; /* Définir la largeur des boutons de produits à 100% pour les centrer */
+    }
+
+    .product-btn {
+        width: 80%; /* Définir la largeur des boutons de produit à 80% pour les centrer */
+    }
+}
